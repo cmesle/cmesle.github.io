@@ -571,7 +571,7 @@
 /**--------------------------------------------------------------------
                 CSS MOBILE VIEWPORT < 768px
 --------------------------------------------------------------------**/
-@media screen and (max-width: 768px and max-resolution: 300ppi) {
+@media screen and (max-width: 768px and max-resolution: 450ppi) {
     
     html {
         width: 100vw;
