@@ -1,6 +1,7 @@
+@import url();
+    
     @font-face {
-
-        font-family: "Raleway";
+        font-family: 'Raleway', sans-serif;
         src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
         font-weight: normal;
         font-style: normal;
@@ -36,11 +37,10 @@
         color: black;
     }
 
-    
-    /** * {
-        border:1px solid black;
-    }**/
-    
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
 
     a {
         text-decoration: none;
@@ -76,7 +76,6 @@
             }
                 nav ul {
                     display: flex;
-                    list-style-type: none;
                     margin: 0;    
                 }
 
@@ -179,43 +178,46 @@
     .filtres {
         display: flex;
         margin-right: 2.5%;
+        box-shadow: -1px 3px 5px rgba(255,255,255,0.5);
     }
+
+        .filtres:hover {
+            margin-top: -1px;
+            background-color: var(--bleu-light);
+            border-radius: 2vw;
+            box-shadow: -1px 3px 5px rgba(0,0,0,0.5);
+            color: var(--bleu);
+            cursor: pointer;
+        }
 
     .filtres_txt {
         height: 3.5vw;
-        margin-left: -35px;
-        padding-left: 45px;
-        padding-right: 15px;
+        margin-left: -3vw;
+        padding-left: 4vw;
+        padding-right: 1.5vw;
         border: 2px solid var(--gris);
         border-left: hidden;
-        border-radius: 20px;
-        transition: background-color 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+        border-radius: 2vw;
+        transition: background-color 0.5s ease, box-shadow 0.5s ease;
     }
-
-    .filtres_txt:hover {
-        background-color: var(--bleu-light);
-        border: 2px solid var(--bleu-light);
-        box-shadow: -1px 3px 5px rgba(0,0,0,0.5);
-        color: var(--bleu);
-
-    }
-
-    .filtres_icon {
-        z-index: 1;
-    }
-
-        .filtres_icon i {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 3.5vw;
-            height: 3.5vw;
-            border-radius: 50%;
-            background-color: #deebff;
-            color:#0065FC;
-            text-align: center;
-            font-size: clamp(8px, 120%, 40px);
+        .filtres_txt:hover {
+            border-color: var(--bleu-light);
         }
+
+    .filtres_icon i {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 3.5vw;
+        height: 3.5vw;
+        border-radius: 50%;
+        background-color: #deebff;
+        z-index: 1;
+        color:#0065FC;
+        text-align: center;
+        font-size: clamp(8px, 120%, 40px);
+    }
 
     #info {
         display: inline;
@@ -375,7 +377,6 @@
 
                 .card_pop {
                     display: flex;
-                    flex-direction: row;
                     margin-bottom: clamp(8px, 1rem, 40px);
                 }
 
@@ -481,8 +482,7 @@
 
                     #act_2 .card_act_img img {
                         width: 100%;
-                        height: 100%;
-                        margin-left: -1%;
+                        margin-left: 0;
                     }
 
             #act_3 {
@@ -495,8 +495,7 @@
         
                     #act_3 .card_act_img img {
                         width: 100%;
-                        height: 100%;
-                        margin-left: -1%;
+                        margin-left: 0;
                     }            
 
             #act_5 {
@@ -509,8 +508,7 @@
         
                     #act_5 .card_act_img img {
                         width: 100%;
-                        height: 100%;
-                        margin-left: -1%;
+                        margin-left: 0;
                     }
 
             #act_6 {
@@ -523,8 +521,7 @@
         
                     #act_6 .card_act_img img {
                         width: 100%;
-                        height: 100%;
-                        margin-left: -1%;
+                        margin-left: 0;
                     }
 
     /** footer**/
@@ -545,27 +542,17 @@
                 font-size: clamp(8px, 130%, 40px);
             }
 
-            .footerlink, .footerlink_2 {
+            .footerlink a {
                 font-size: clamp(8px, 115%, 40px);
                 line-height: 2em;
                 color:black;
-                transition: border-radius 2s ease, box-shadow 0.5s ease, font-size 0.5s ease;
+                transition: padding-left 1s ease;
             }
 
                 .footerlink a:hover {
-                    padding-right: 3rem;
-                    border-right: 2px solid var(--bleu);
+                    padding-left: 1rem;
+                    border-left: 2px solid black;
                 }
-
-                .footerlink_2 a:hover {
-                    padding: 0.5rem;
-                    margin-top: -1px;
-                    margin-left: -1.5rem;
-                    border-radius: 0.5rem;
-                    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.5);
-                    font-size: 110%;
-                }
-
 
 
 
@@ -588,9 +575,9 @@
 
             #logo {
                 width: 100%;
-                height: 125px;
+                padding: 71px;
                 background-image: url(images/logo/booki.png);
-                background-size: 165px;
+                background-size: 25%;
                 background-repeat: no-repeat;
                 background-position: 50% 75%;
             }
@@ -602,7 +589,7 @@
             nav {
                 width: 100%;
                 margin: 30px 0;
-                font-size: 29px;
+                font-size: 410%;
                 font-weight: 400;
             }
                 nav ul {
@@ -618,12 +605,12 @@
                         nav a {
                         padding: 7%;
                         border-top: unset;
-                        border-bottom: 5px solid var(--gris);
+                        border-bottom: 6px solid var(--gris);
                         }
 
                         nav a:hover {
                             border-top: unset;
-                            border-bottom: 5px solid var(--bleu);
+                            border-bottom: 6px solid var(--bleu);
                             color: var(--bleu);
                         }
 
@@ -634,12 +621,12 @@
 
                 h1 {
                     margin: 25px 0;
-                    font-size: 39px;
+                    font-size: 600%;
                     font-weight: 700;
                 }
 
                 #underbsln {
-                    font-size: 28px;
+                    font-size: 440%;
                 }
 
 
@@ -648,7 +635,7 @@
             #recherche {
                 padding: 4.5%;
                 margin: 30px 0 20px 0;
-                font-size: 30px;
+                font-size: 430%;
             }
 
                 /**---- formulaire ville ----**/
@@ -664,7 +651,7 @@
                 }
 
                 #ville {
-                    width: 74%;
+                    width: 100%;
                     height: 95px;
                     padding: 25px;
                     padding-top: 30px;
@@ -726,8 +713,8 @@
                     }
                     
                         .filtres_icon {
-                            width: 90px;
-                            height: 90px;
+                            width: 99px;
+                            height: 99px;
                         }
                             .filtres_icon i {
                                 width: 100%;
@@ -736,12 +723,18 @@
 
                         .filtres_txt {
                             height: unset;
-                            margin-left: -80px;
+                            margin-left: -85px;
                             border: 4px solid var(--gris);
                             border-radius: 80px;
-                            padding: 20px 30px 20px 90px;
+                            padding: 25px 35px 25px 110px;
                             line-height: 1.3;
                         }
+
+                            .filtres_txt:hover {
+                                padding-top: 22px;
+                                padding-left: unset;
+                                line-height: 1.3;
+                            }
 
                     #info {
                         display: flex;
@@ -771,13 +764,13 @@
 
                 h2 {
                     margin: 40px 0;
-                    font-size: 40px;
+                    font-size: 600%;
                 }
 
                 .cards {
                     padding: 10px;  
                     border-radius: 35px;
-                    font-size: 25px;
+                    font-size: 320%;
                 }
 
                 .card_img {
@@ -790,6 +783,7 @@
                 #hbgts {
                     width: 100%;
                     padding: 2.75%;
+                    background-color: unset;
                 }
 
                     .card_hbgt {
@@ -819,6 +813,9 @@
 
                         .card_pop_img {
                             display: flex;
+                            width: 35%;
+                            min-width: unset;
+                            max-width: none;
                             height: 250px;
                             margin-right: 20px;
                             border-radius: 30px 0 0 30px;
