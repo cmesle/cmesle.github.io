@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+
     <link type="text/css" rel="stylesheet" href="normalize.css">
     <link type="text/css" rel="stylesheet" href="css.css">
 
@@ -47,9 +48,9 @@
           <i class="fas fa-map-marker-alt"></i>
           <input type="search" id="ville" name="ville" placeholder="Marseille, France" />
           <input type="button" id="ville-submit_dsk" value="Rechercher"/>
-          <div id="ville-submit_mob">
-            <button id="ville-submit_mob_button"><i class="fas fa-search"></i></button>
-          </div>
+          <!--<div id="ville-submit_mob">-->
+            <button id="ville-submit_mob"><i class="fas fa-search"></i></button>
+          <!--</div>-->
         </form>
       </div>
 
@@ -126,6 +127,7 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/auberge-la-cannebiere_600.jpg" alt="Auberge La Cannebière">
               </div>
+
               <DIV class="card_desc">
                 <h4>
                   Auberge La Cannebière
@@ -148,6 +150,7 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-du-port_600.jpg" alt="Hôtel du Port">
               </div>
+
               <DIV class="card_desc">
                 <h4>
                   Hôtel du port
@@ -169,6 +172,7 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-les-mouettes_600.jpg" alt="Hôtel Les mouettes">
               </div>
+
               <DIV class="card_desc">
                 <h4>
                   Hôtel Les mouettes
@@ -190,6 +194,7 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-de-la-mer_600.jpg" alt="Hôtel de la mer">
               </div>
+
               <DIV class="card_desc">
                 <h4>
                   Hôtel de la mer
@@ -211,6 +216,7 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/auberge-le-panier_600.jpg" alt="Auberge Le Panier">
               </div>
+
               <DIV class="card_desc">
                 <h4>
                   Auberge Le Panier
@@ -232,6 +238,7 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-chez-amina_600.jpg" alt="Hôtel chez Amina">
               </div>
+
               <DIV class="card_desc">
                 <h4>
                   Hôtel chez Amina
@@ -289,9 +296,8 @@
             </a>
 
             <a id="pop_2" class="cards card_pop">
-              <div class="card_pop_img">
-                <img src="images/hebergements/populaires/au-coeur-de-leau_350.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
-              </div>
+
+
               <DIV class="card_desc">
                 <div class="card_desc_info">
                   <h4>
@@ -310,6 +316,10 @@
                   <span class="none"><i class="fas fa-star"></i></span>
                 </div>
               </DIV>
+
+              <div class="card_pop_img">
+                <img src="images/hebergements/populaires/au-coeur-de-leau_350.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+              </div>
             </a>
 
             <a id="pop_3" class="cards card_pop">
@@ -354,7 +364,11 @@
               </DIV>
 
               <div class="card_act_img">
-                <img src="images/activites/vieux-port_dsk.jpg" alt="Vieux Port">
+                <img  srcset="images/activites/vieux-port_350.jpg 350w,
+                              images/activites/vieux-port_dsk.jpg 650w"
+                      sizes="(max-width: 768px) 350px, 650px"
+                      src="images/activites/vieux-port_dsk.jpg"
+                      alt="Vieux Port">
               </div>
             </a>
 
@@ -366,7 +380,7 @@
               </DIV>
 
               <div class="card_act_img">
-                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Parc de Pom&egrave;gues">
+                <img src="images/activites/fort-de-pomegues.jpg" alt="Fort de Pom&egrave;gues">   
               </div>
             </a>
 
@@ -378,7 +392,7 @@
               </DIV>
 
               <div class="card_act_img">
-                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="&Icirc;les du Frioul">
+                <img src="images/activites/iles-du-frioul.jpg" alt="&Icirc;les du Frioul">
               </div>
             </a>
 
@@ -402,7 +416,7 @@
               </DIV>
 
               <div class="card_act_img">
-                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                <img src="images/activites/Notre-Dame-de-la-Garde.jpg" alt="Notre-Dame-de-la-Garde">
               </div>
             </a>
             
@@ -414,7 +428,7 @@
               </DIV>
 
               <div class="card_act_img">
-                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                <img src="images/activites/parc-longchamp.jpg" alt="Parc Longchamp">
               </div>
             </a>
             
