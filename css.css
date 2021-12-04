@@ -853,6 +853,7 @@ footer {
             /**--- FOOTER --**/
             footer {
                 flex-direction: column;
+                padding: 7%;
             }
 
                 .footerblock {
