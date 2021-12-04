@@ -762,19 +762,25 @@ footer {
                 .cards {
                     margin-bottom: 10px;
                     border-radius: 18px;
+                    padding: 1.5%;
                     font-size: 320%;
                 }
 
                 .card_img {
                     max-width: unset;
                     height: 115px;
-                    border-radius:15px 15px 0 0;
+                    border-radius: 15px 15px 0 0;
                 }
 
-                .rating {
-                    padding-top: 2%;
-                    padding-bottom: 0;
+                .card_desc {
+                    padding: 2% 4%;
+                    font-size: 4rem;
                 }
+
+                    .rating {
+                        padding-top: 2%;
+                        padding-bottom: 0;
+                    }
 
                 /**---- Hébergements ----**/
                 #hbgts {
@@ -825,10 +831,7 @@ footer {
                                 border-radius: 15px 0 0 15px;
                             }
 
-                            .card_desc {
-                                padding: 2.5% 6%;
-                                font-size: 4rem;
-                            }
+
 
                 /**---- ACTIVITES ----**/
                 #actvts {
@@ -840,11 +843,13 @@ footer {
                 }
                 .card_act {
                     width: 100%;
+                    margin: 12px 0;
+                    padding: 0;
                 }
 
                     .card_act_img {
                         display: flex;
-                        height: 115px;
+                        height: 140px;
                         max-width: unset;
                         border-radius: 12px 12px 0 0;
                         overflow: hidden;
