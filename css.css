@@ -761,7 +761,6 @@ footer {
 
                 .cards {
                     margin-bottom: 10px;
-                    padding: 1.5%;  
                     border-radius: 18px;
                     font-size: 320%;
                 }
@@ -834,7 +833,7 @@ footer {
                 /**---- ACTIVITES ----**/
                 #actvts {
                     margin-top: unset;
-                    padding: unset;
+                    padding: 5%;
                 }
                 #act_rslts {
                     height: unset;
