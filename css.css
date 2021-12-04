@@ -16,7 +16,7 @@ box-sizing: border-box; /* Opera/IE 8+ */
 :root {
     --bleu: #0065FC;
     --bleu-light: #DEEBFF;
-    --gris: #F2F2F2;
+    --gris: #6b6b6b;
     font-size: 1vw;
 }
 
@@ -596,7 +596,7 @@ footer {
 
             /**---- BASELINE ----**/
             #baseline {
-                padding: 0 30px;
+                padding: 0 5%;
             }
 
                 h1 {
@@ -614,7 +614,7 @@ footer {
 
             #recherche {
                 padding: 0 4.5%;
-                margin: 35px 0 20px 0;
+                margin: 35px 0 43px 0;
                 font-size: 460%;
             }
 
@@ -651,7 +651,7 @@ footer {
                         position: relative;
                         display: inline-block;
                         z-index: 1;
-                        margin-left: -10px;
+                        margin-left: -12px;
                         padding: 4.5% 5%;
                         border: 2px;
                         border-radius: 30%;
@@ -692,7 +692,7 @@ footer {
                     }
 
                     .filtres {
-                        margin-bottom: 12px;
+                        margin-bottom: 13px;
                         margin-right: 0;
                     }
 
@@ -704,13 +704,13 @@ footer {
 
                         }
                             .filtres_icon i {
-                                width: 50px;
-                                height: 50px;
+                                width: 51px;
+                                height: 51px;
                             }
 
                         .filtres_txt {
                             height: unset;
-                            margin-left: -40px;
+                            margin-left: -42px;
                             border: 2px solid var(--gris);
                             border-radius: 80px;
                             padding: 12px 20px 12px 50px;
@@ -723,23 +723,25 @@ footer {
 
                     #info {
                         display: flex;
-                        margin-top: 40px;
+                        margin-top: 5%;
                     }
 
                         #info_icon {
-                            width: 50px;
-                            height: 50px;
-                            margin-top: -1%;
                             margin-right: 15px;
-                            border: 3px solid var(--gris);
-                            border-radius: 50%;
                         }
 
                             #info_icon i {
-                                width: 100%;
-                                height: 100%;
-                                font-size: 20px;
+                                width: 23px;
+                                height: 23px;
+                                border: 1px solid var(--gris);
+                                font-size: 70%;
+                                font-weight: 600;
                             }
+
+                        #info_txt {
+                            margin-top: 2px;
+                            font-weight: 300;
+                        }
 
 
             /**--- ZONE DE RESULTATS ---**/
@@ -747,21 +749,27 @@ footer {
                 padding: 0;
             }
 
+                .rslts {
+                    padding: 5%;
+                }
+                
+
                 h2 {
-                    margin: 40px 0;
+                    margin: 5% 0;
                     font-size: 600%;
+                    font-weight: 600;
                 }
 
                 .cards {
-                    padding: 10px;  
-                    border-radius: 35px;
+                    padding: 1.5%;  
+                    border-radius: 18px;
                     font-size: 320%;
                 }
 
                 .card_img {
                     max-width: unset;
                     height: 55%;
-                    border-radius: 35px 35px 0 0;
+                    border-radius:15px 15px 0 0;
                 }
 
                 /**---- Hébergements ----**/
@@ -777,8 +785,8 @@ footer {
 
                     h4 {
                         margin: 5px 0 5px 0;
-                        font-size: clamp(8px, 130%, 40px);
-                        font-weight: 700;
+                        font-size: 110%;
+                        font-weight: 600;
                     }
 
                 /**---- POPULAIRES ----**/
@@ -786,7 +794,6 @@ footer {
                     width: 100%;
                     border-radius: 0;
                     background-color: var(--gris);
-                    padding: 35px;
                     order: -1;
                 }
 
@@ -799,21 +806,21 @@ footer {
                         .card_pop_img {
                             order: -1;
                             display: flex;
-                            width: 35%;
+                            width: 40%;
                             min-width: unset;
                             max-width: none;
-                            height: 250px;
-                            margin-right: 20px;
-                            border-radius: 30px 0 0 30px;
+                            height: 135px;
+                            border-radius: 15px 0 0 15px;
                         }
 
                         .card_pop_desc {
                             width: 61%;
-                            padding: 15px;
+                            padding: 2.5% 6%;
                         }
 
                         .rating_pop {
-                            font-size: clamp(8px, 80%, 40px);
+                            font-size: 75%;
+                            padding-bottom: 0;
                         }
 
                 /**---- ACTIVITES ----**/
