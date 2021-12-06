@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    
     <link type="text/css" rel="stylesheet" href="normalize.css">
     <link type="text/css" rel="stylesheet" href="css.css">
 
@@ -48,9 +48,9 @@
           <i class="fas fa-map-marker-alt"></i>
           <input type="search" id="ville" name="ville" placeholder="Marseille, France" />
           <input type="button" id="ville-submit_dsk" value="Rechercher"/>
-          <!--<div id="ville-submit_mob">-->
-            <button id="ville-submit_mob"><i class="fas fa-search"></i></button>
-          <!--</div>-->
+          <div id="ville-submit_mob">
+            <button id="ville-submit_mob_button"><i class="fas fa-search"></i></button>
+          </div>
         </form>
       </div>
 
@@ -61,7 +61,7 @@
         </div>
         <div class="filtres">
           <div class="filtres_icon">
-            <i class="fas fa-money-bill-wave-alt"></i>
+            <i class="fas fa-money-bill-wave"></i>
           </div>
 
           <div class="filtres_txt">
@@ -127,7 +127,6 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/auberge-la-cannebiere_600.jpg" alt="Auberge La Cannebière">
               </div>
-
               <DIV class="card_desc">
                 <h4>
                   Auberge La Cannebière
@@ -150,7 +149,6 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-du-port_600.jpg" alt="Hôtel du Port">
               </div>
-
               <DIV class="card_desc">
                 <h4>
                   Hôtel du port
@@ -172,7 +170,6 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-les-mouettes_600.jpg" alt="Hôtel Les mouettes">
               </div>
-
               <DIV class="card_desc">
                 <h4>
                   Hôtel Les mouettes
@@ -194,7 +191,6 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-de-la-mer_600.jpg" alt="Hôtel de la mer">
               </div>
-
               <DIV class="card_desc">
                 <h4>
                   Hôtel de la mer
@@ -216,7 +212,6 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/auberge-le-panier_600.jpg" alt="Auberge Le Panier">
               </div>
-
               <DIV class="card_desc">
                 <h4>
                   Auberge Le Panier
@@ -238,7 +233,6 @@
               <div class="card_img">
                 <img src="images/hebergements/hbgts/hotel-chez-amina_600.jpg" alt="Hôtel chez Amina">
               </div>
-
               <DIV class="card_desc">
                 <h4>
                   Hôtel chez Amina
@@ -296,8 +290,9 @@
             </a>
 
             <a id="pop_2" class="cards card_pop">
-
-
+              <div class="card_pop_img">
+                <img src="images/hebergements/populaires/au-coeur-de-leau_350.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+              </div>
               <DIV class="card_desc">
                 <div class="card_desc_info">
                   <h4>
@@ -316,10 +311,6 @@
                   <span class="none"><i class="fas fa-star"></i></span>
                 </div>
               </DIV>
-
-              <div class="card_pop_img">
-                <img src="images/hebergements/populaires/au-coeur-de-leau_350.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
-              </div>
             </a>
 
             <a id="pop_3" class="cards card_pop">
@@ -356,82 +347,77 @@
           </h2>
 
           <div id="act_rslts">
-            <a id="act_1" class="cards card_act">
-              <DIV class="card_desc">
-                <h4>
-                  Vieux Port
-                </h4>
-              </DIV>
+              <a id="act_1" class="cards card_act">
+                <DIV class="card_desc">
+                  <h4>
+                    Vieux Port
+                  </h4>
+                </DIV>
 
-              <div class="card_act_img">
-                <img  srcset="images/activites/vieux-port_350-2.jpg 350w,
-                              images/activites/vieux-port_dsk.jpg 650w"
-                      sizes="(max-width: 768px) 350px, 650px"
-                      src="images/activites/vieux-port_dsk.jpg"
-                      alt="Vieux Port">
-              </div>
-            </a>
+                <div class="card_act_img">
+                  <img src="images/activites/vieux-port_dsk.jpg" alt="Vieux Port">
+                </div>
+              </a>
 
-            <a id="act_2" class="cards card_act">
-              <DIV class="card_desc">
-                <h4>
-                  Fort de Pom&egrave;gues
-                </h4>
-              </DIV>
+              <a id="act_2" class="cards card_act">
+                <DIV class="card_desc">
+                  <h4>
+                    Fort de Pom&egrave;gues
+                  </h4>
+                </DIV>
 
-              <div class="card_act_img">
-                <img src="images/activites/fort-de-pomegues.jpg" alt="Fort de Pom&egrave;gues">   
-              </div>
-            </a>
+                <div class="card_act_img">
+                  <img src="images/activites/fort-de-pomegues.jpg" alt="Fort de Pom&egrave;gues">
+                </div>
+              </a>
 
-            <a id="act_3" class="cards card_act">
-              <DIV class="card_desc">
-                <h4>
-                  &Icirc;les du Frioul
-                </h4>
-              </DIV>
+              <a id="act_3" class="cards card_act">
+                <DIV class="card_desc">
+                  <h4>
+                    &Icirc;les du Frioul
+                  </h4>
+                </DIV>
 
-              <div class="card_act_img">
-                <img src="images/activites/iles-du-frioul.jpg" alt="&Icirc;les du Frioul">
-              </div>
-            </a>
+                <div class="card_act_img">
+                  <img src="images/activites/iles-du-frioul.jpg" alt="&Icirc;les du Frioul">
+                </div>
+              </a>
 
-            <a id="act_4" class="cards card_act">
-              <DIV class="card_desc">
-                <h4>
-                  Parc national des Calanques
-                </h4>
-              </DIV>
+              <a id="act_4" class="cards card_act">
+                <DIV class="card_desc">
+                  <h4>
+                    Parc national des Calanques
+                  </h4>
+                </DIV>
 
-              <div class="card_act_img">
-                <img src="images/activites/parc-national-des-calanques_dsk.jpg" alt="Parc national des Calanques">
-              </div>
-            </a>
+                <div class="card_act_img">
+                  <img src="images/activites/parc-national-des-calanques_dsk.jpg" alt="Parc national des Calanques">
+                </div>
+              </a>
 
-            <a id="act_5" class="cards card_act">
-              <DIV class="card_desc">
-                <h4>
-                  Notre-Dame-de-la-Garde
-                </h4>
-              </DIV>
+              <a id="act_5" class="cards card_act">
+                <DIV class="card_desc">
+                  <h4>
+                    Notre-Dame-de-la-Garde
+                  </h4>
+                </DIV>
 
-              <div class="card_act_img">
-                <img src="images/activites/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde">
-              </div>
-            </a>
-            
-            <a id="act_6" class="cards card_act">
-              <DIV class="card_desc">
-                <h4>
-                  Parc Longchamp
-                </h4>
-              </DIV>
+                <div class="card_act_img">
+                  <img src="images/activites/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde">
+                </div>
+              </a>
+              
+              <a id="act_6" class="cards card_act">
+                <DIV class="card_desc">
+                  <h4>
+                    Parc Longchamp
+                  </h4>
+                </DIV>
 
-              <div class="card_act_img">
-                <img src="images/activites/parc-longchamp.jpg" alt="Parc Longchamp">
-              </div>
-            </a>
-            
+                <div class="card_act_img">
+                  <img src="images/activites/parc-longchamp.jpg" alt="Parc Longchamp">
+                </div>
+              </a>
           </div>
         </section>
 
