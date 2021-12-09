@@ -22,7 +22,10 @@
   <!--HEADER-->
     <header>
 
-      <div id="logo"><img src="images/logo/Booki@3x.png" alt="Booki"></div>
+      <div id="logo"><img srcset="images/logo/Booki.png 191w,
+                                 images/logo/Booki@3x.png 285w"
+                          sizes="(max-width: 768px) 191px, 285px"
+                          src="images/logo/Booki@3x.png" alt="Booki"></div>
                                    
       <!--NAVIGATION-->
       <nav>
@@ -293,7 +296,7 @@
               <div class="card_pop_img">
                 <img src="images/hebergements/populaires/au-coeur-de-leau_350.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
               </div>
-              <DIV class="card_desc">
+              <DIV class="card_desc card_pop_desc">
                 <div class="card_desc_info">
                   <h4>
                     Au coeur de l'eau Chambres d'hôtes
@@ -317,7 +320,7 @@
               <div class="card_pop_img">
                 <img src="images/hebergements/populaires/hotel-tout-bleu-et-blanc_350.jpg" alt="Hôtel Tout bleu et blanc">
               </div>
-              <DIV class="card_desc">
+              <DIV class="card_desc card_pop_desc">
                 <div class="card_desc_info">
                   <h4>
                     Hôtel Tout bleu et blanc
@@ -355,11 +358,7 @@
                 </DIV>
 
                 <div class="card_act_img">
-                <img  srcset="images/activites/vieux-port_350-2.jpg 350w,
-                              images/activites/vieux-port_dsk.jpg 650w"
-                      sizes="(max-width: 768px) 350px, 650px"
-                      src="images/activites/vieux-port_dsk.jpg"
-                      alt="Vieux Port">
+                  <img src="images/activites/vieux-port_dsk.jpg" alt="Vieux Port">
                 </div>
               </a>
 
@@ -433,7 +432,7 @@
           <h3>
             A propos
           </h3>
-          <ul class="footerlink">
+          <ul class="footerlinks">
             <li>
               <a>Fonctionnement du site</a>
             </li>
@@ -450,7 +449,7 @@
           <h3>
             Nos hébergements
           </h3>
-          <ul class="footerlink">
+          <ul class="footerlinks">
             <li>
               <a>Charte qualité</a>
             </li>
@@ -464,7 +463,7 @@
           <h3>
             Assistance
           </h3>
-          <ul class="footerlink">
+          <ul class="footerlinks">
             <li>
               <a>Centre d'aide</a>
             </li>
