@@ -37,6 +37,7 @@ body
 }
 
 ul {
+    margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
 }
@@ -84,7 +85,7 @@ header {
             }**/
             nav a {
                 display: block;
-                padding: 40px 25px 0 25px;
+                padding: 4rem 2.5rem 0 2.5rem;
                 border-top: 2px solid white;
                 color: black;
             }
@@ -121,16 +122,16 @@ font-size: clamp(8px, 120%, 40px);
 }
     #form i {
         background-color: var(--gris);
-        padding: 1.1% 1.2%;
+        padding: 1% 1.3%;
         border: 2px solid var(--gris);
         border-radius: 30% 0 0 30%;
-        font-size: clamp(8px, 120%, 40px);
+        font-size: clamp(8px, 110%, 40px);
     }
 
     #ville {
         width: 18%;
         margin-left: -5px;
-        padding: 1.1%;
+        padding: 1%;
         border-color: var(--bleu-light);
         border: 2px solid var(--gris);
         font-weight: 700;
@@ -147,10 +148,10 @@ font-size: clamp(8px, 120%, 40px);
 
         left: 28%;
         margin-left: -4px;
-        padding: 0.9%;
+        padding: 1%;
         background-color: var(--bleu);
-        border: 2px solid var(--bleu);
-        border-radius: 0 0.9vw 0.9vw 0;
+        border: 1px solid var(--bleu);
+        border-radius: 0 0.9rem 0.9rem 0;
         font-weight:600;
         color: white;
     }
@@ -185,20 +186,20 @@ font-size: clamp(8px, 120%, 40px);
     .filtres:hover {
         margin-top: -1px;
         background-color: var(--bleu-light);
-        border-radius: 2vw;
+        border-radius: 2rem;
         box-shadow: -1px 3px 5px rgba(0,0,0,0.5);
         color: var(--bleu);
         cursor: pointer;
     }
 
 .filtres_txt {
-    height: 3.5vw;
-    margin-left: -3vw;
-    padding-left: 4vw;
-    padding-right: 1.5vw;
+    height: 3.5rem;
+    margin-left: -3rem;
+    padding-left: 4rem;
+    padding-right: 1.5rem;
     border: 2px solid var(--gris);
     border-left: hidden;
-    border-radius: 2vw;
+    border-radius: 2rem;
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -211,8 +212,8 @@ font-size: clamp(8px, 120%, 40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     background-color: var(--bleu-light);
     z-index: 1;
@@ -234,8 +235,8 @@ font-size: clamp(8px, 120%, 40px);
 #info_icon i {
     display: inline-flex;
     display: -webkit-inline-flex;
-    width: 2vw;
-    height: 2vw;
+    width: 2rem;
+    height: 2rem;
     background-color: unset;
     border: 2px solid var(--gris);
     font-size: clamp(8px, 80%, 40px);
@@ -276,9 +277,9 @@ h2 {
     .cards {
         width: 31%;
         /**min-height: 150px;**/
-        margin: 0 0 clamp(20px,1rem,30px) 0;
-        padding: 0.4rem;  
-        border-radius: 1.5vw;
+        margin-bottom: 2.5rem;
+        padding: 0.3rem;  
+        border-radius: 1rem;
         background-color: white;
         box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1);
     }
@@ -306,7 +307,6 @@ h2 {
 
     #plus {
         width: 100%;
-        margin-top: 15px;
         font-size: clamp(8px, 130%, 40px);
         font-weight: 700;
     }
@@ -317,7 +317,6 @@ h2 {
 
 #hbgts {
     width: 65%;
-    margin-right: 2.4%;
 }
 
     #hbgts_cards {
@@ -332,8 +331,8 @@ h2 {
 
             .card_img {
                 display: flex;
-                height: 8rem;
-                border-radius: 1.2vw 1.2vw 0 0;
+                height: 7.5rem;
+                border-radius: 0.7rem 0.7rem 0 0;
                 overflow: hidden;
             }
 
@@ -346,12 +345,12 @@ h2 {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                padding: 3% 6% 0;
+                padding: 3% 5% 0;
                 font-size: clamp(8px, 100%, 40px);
             }
 
             h4 {
-                margin: 2% 0 3% 0;
+                margin: 2% 0;
                 font-weight: 900;
                 font-size: clamp(8px, 110%, 40px);
             }
@@ -367,7 +366,6 @@ h2 {
 
     /**-----------POPULAIRES-------------------**/
     #populaires {
-        position: relative;
         width: 32%;
     }
 
@@ -380,8 +378,7 @@ h2 {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100%;
-            padding-bottom: 8%;
+            height: 92%;
         }
 
 
@@ -389,16 +386,14 @@ h2 {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                margin-bottom: clamp(8px, 1rem, 40px);
+                margin-bottom: 0;
             }
 
                 .card_pop_img {
                     display: flex;
-                    flex-shrink: 0;
                     min-width: 9rem;
-                    max-width: 9rem;
-                    height: 9.5rem;
-                    border-radius: 1.2vw 0 0 1.2vw;
+                    height: 9rem;
+                    border-radius: 0.7rem 0 0 0.7rem;
                     overflow: hidden;
                 }
 
@@ -409,19 +404,13 @@ h2 {
                     }
 
                 .card_pop_desc {
-                    position: relative;
+                    margin-bottom: 0.5%;
                 }
 
             .rating_pop {
                 padding-bottom: 5px;
-                font-size: clamp(8px, 75%, 40px);
             }
 
-            .card_pop_desc_2 {
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: space-between;
-            }
 
 /**-----------ACTIVITES-------------------**/
     #actvts {
@@ -436,7 +425,7 @@ h2 {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 33.3rem;
+        height: 30rem;
     }
         .card_act {
             display: flex;
@@ -444,6 +433,8 @@ h2 {
             width: 22.5%;
             min-width: unset;
             min-height: unset;
+            margin-right: 2.5%;
+            margin-bottom: 0;
             padding: 0;
             overflow: hidden;
         }
@@ -460,46 +451,57 @@ h2 {
                 }
             
             #act_rslts .card_desc {
-                margin-bottom: 0.5vw;
+                padding: 4% 5%;
             }
 
         #act_1,
         #act_4
         {
             height: 100%;
-            margin-right: 2.5%;
         }
 
-        .card_act:nth-child(2),
-        .card_act:nth-child(3) {
-            margin-right: 2.5%;
+        .card_act:nth-child(5),
+        .card_act:nth-child(6) {
+            margin-right: 0;
         }
 
         #act_2 {
-            height: 51%;
+            height: 54%;
         }
 
                 #act_2 .card_act_img img {
-                    transform: translate(0, -20%);
+                    transform: translate(0, -23%);
                 }
 
         #act_3 {
             height: 37%;
         }
+        
+                #act_3 .card_act_img img {
+                    transform: translate(0, -10%);
+                }
 
         #act_5 {
-            height: 42%;
+            height: 44%;
         }
 
+                #act_5 .card_act_img img {
+                    transform: translate(1px, 0);
+                }
+
         #act_6 {
-            height: 47%;
+            height: 46%;
         }
+                #act_6 .card_act_img img {
+                    transform: translate(1px, -5%);
+                }
 
 
 /** footer**/
 footer {
     display: flex;
     width: 100%;
+    margin-top: 2rem;
     padding: 3.5rem;
     background-color: var(--gris);
 }
@@ -514,17 +516,56 @@ footer {
             font-size: clamp(8px, 130%, 40px);
         }
 
-        .footerlink a {
+        .footerlinks a {
             font-size: clamp(8px, 115%, 40px);
             line-height: 2em;
             color:black;
             transition: padding-left 1s ease;
         }
 
-            .footerlink a:hover {
+            .footerlinks a:hover {
                 padding-left: 1rem;
                 border-left: 2px solid black;
             }
+
+
+
+/**--------------------------------------------------------------------
+                CSS MOBILE VIEWPORT 768px <> 992px
+--------------------------------------------------------------------**/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    :root {
+        font-size: 1.2vw;
+    }
+
+        #hbgts {
+            width: 100%;
+            margin-right: 0;
+        }
+
+            .card_hbgt {
+                width: 31%;
+            }
+
+        #populaires {
+            order:-1;
+            width: 100%;
+        }        
+            #pop_cards {
+                flex-direction: row;
+                justify-content: space-between;
+                height: fit-content;
+                padding-bottom: 0;
+            }
+                .card_pop {
+                    width: 31%;
+                    margin-bottom: 0;
+                }
+
+                .card_act {
+                    margin-bottom: clamp(10px, 1rem, 15px);
+                }
+}
 
 
 
@@ -533,6 +574,10 @@ footer {
 --------------------------------------------------------------------**/
 @media screen and (max-width: 768px) {
     
+    :root {
+        font-size: 3.8vw;
+    }
+
     html {
         width: 100vw;
     }    
@@ -547,21 +592,18 @@ footer {
 
             #logo {
                 width: 100%;
-                height: 70px;
-                background-image: url(images/logo/Booki.png);
-                background-size: 25%;
-                background-repeat: no-repeat;
-                background-position: 50% 75%;
+                padding-top: 20px;
+                text-align: center;
             }
-                #logo img {
-                    display: none;
-                }
 
+                #logo img {
+                    width: 25%;
+                }
+ 
             /**---- NAVIGATION ----**/
             nav {
                 width: 100%;
                 margin: 20px 0;
-                font-size: 420%;
                 font-weight: 400;
             }
                 nav ul {
@@ -592,13 +634,12 @@ footer {
             }
 
                 h1 {
-                    margin: 5px 0 15px 0;
-                    font-size: 600%;
+                    margin-bottom: 12px;
                     font-weight: 700;
                 }
 
                 #underbsln {
-                    font-size: 440%;
+
                 }
 
 
@@ -607,7 +648,6 @@ footer {
             #recherche {
                 padding: 0 4.5%;
                 margin: 35px 0 43px 0;
-                font-size: 460%;
             }
 
                 /**---- formulaire ville ----**/
@@ -644,7 +684,7 @@ footer {
                         display: inline-block;
                         z-index: 1;
                         margin-left: -12px;
-                        padding: 4.5% 5%;
+                        padding: 4.5% 4%;
                         border: 2px;
                         border-radius: 30%;
                         background-color: var(--bleu);
@@ -672,12 +712,12 @@ footer {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    margin-top: 30px;
+                    margin-top: 18px;
                 }
 
                     #filtres_titre {
                         width: 100%;
-                        margin-bottom: 3.5%;
+                        font-size: 105%;
                     }
 
                     .filtres {
@@ -692,22 +732,19 @@ footer {
                         .filtres_icon {
 
                         }
-                            .filtres_icon i {
-                                width: 51px;
-                                height: 51px;
-                            }
 
                         .filtres_txt {
                             height: unset;
-                            margin-left: -42px;
-                            border: 2px solid var(--gris);
+                            margin-left: -3rem;
+                            border: 3px solid var(--gris);
                             border-radius: 80px;
-                            padding: 12px 20px 12px 50px;
-                            line-height: 1.3;
+                            padding: 0 1rem 0 3.5rem;
+                            line-height: 2.8;
+                            font-size: 95%;
                         }
 
                             .filtres_txt:hover {
-                                border-color: var(--bleu-light);
+                                margin-bottom: 1px;
                             }
 
                     #info {
@@ -716,15 +753,14 @@ footer {
                     }
 
                         #info_icon {
-                            margin-right: 15px;
+                            margin-right: 1rem;
+                            margin-top: -0.2rem;
                         }
 
                             #info_icon i {
-                                width: 23px;
-                                height: 23px;
+                                width: 1.9rem;
+                                height: 1.9rem;
                                 border: 1px solid var(--gris);
-                                font-size: 70%;
-                                font-weight: 600;
                             }
 
                         #info_txt {
@@ -739,23 +775,24 @@ footer {
             }
 
                 .rslts {
-                    margin-bottom: 5px;
+                    margin-bottom: 0;
                     padding: 5%;
                 }
                 
 
                 h2 {
-                    margin: 5% 0;
-                    font-size: 600%;
-                    font-weight: 600;
+                    margin: 5% 0 7%;
                 }
 
                 .cards {
-                    margin-bottom: 10px;
-                    border-radius: 18px;
+                    margin-bottom: 0.8rem;
                     padding: 1.5%;
-                    font-size: 320%;
                 }
+
+                    .cards:hover {
+                        margin-top: -0.07rem;
+                        margin-bottom: 0.9rem;
+                    }
 
                 .card_img {
                     max-width: unset;
@@ -764,13 +801,11 @@ footer {
                 }
 
                 .card_desc {
-                    padding: 2% 4%;
-                    font-size: 4rem;
+                    padding: 2% 4% 1.5%;
                 }
 
                     .rating {
                         padding-top: 2%;
-                        padding-bottom: 0;
                     }
 
                 /**---- Hébergements ----**/
@@ -786,13 +821,11 @@ footer {
 
                     h4 {
                         margin: 5px 0 5px 0;
-                        font-size: 110%;
-                        font-weight: 600;
+                        font-weight: 700;
                     }
 
                     #plus {
-                        font-size: 5rem;
-                        font-weight: 600;
+                        margin-top: 1rem;
                     }
 
                 /**---- POPULAIRES ----**/
@@ -805,23 +838,25 @@ footer {
 
                     #pop_cards {
                         display: block;
-                        margin-top: 28px;
-                        padding-bottom: 0;
+                        margin-top: 2rem;
+                        padding-bottom: 0.5rem;
                     }
 
                         .card_pop {
                             margin-bottom: 12px;
                         }
 
-                            .card_pop_img {
-                                order: -1;
-                                width: 40%;
-                                min-width: unset;
-                                max-width: none;
-                                height: 135px;
-                                border-radius: 15px 0 0 15px;
+                            .card_pop_desc {
+                                padding: 2% 6%;
                             }
 
+                            .card_pop_img {
+                                height: 9.5rem;
+                            }
+
+                            .rating_pop {
+                                padding-bottom: 0;
+                            }
 
 
                 /**---- ACTIVITES ----**/
@@ -834,17 +869,19 @@ footer {
                 }
                 .card_act {
                     width: 100%;
-                    margin: 12px 0;
+                    margin: 0 0 1.5rem;
                     padding: 0;
                 }
 
                     .card_act_img {
                         display: flex;
-                        height: 140px;
+                        height: 9.5rem;
                         max-width: unset;
-                        border-radius: 12px 12px 0 0;
                         overflow: hidden;
                     }
+                .card_act:nth-child(n) {
+                    height: unset;
+                }
 
             /**--- FOOTER --**/
             footer {
@@ -858,54 +895,11 @@ footer {
                 }
 
                 h3 {
-                    font-size: 5rem;
+/*                     font-size: 5rem; */
                     font-weight: 600;
                 }
 
-                    .footerlink a {
-                        font-size: 4.5rem;
+                    .footerlinks a {
+/*                         font-size: 4.5rem; */
                     }
-}
-
-
-
-/**--------------------------------------------------------------------
-                CSS MOBILE VIEWPORT 768px <> 992px
---------------------------------------------------------------------**/
-@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
-
-        #hbgts {
-            width: 100%;
-            margin-right: 0;
-        }
-
-            .card_hbgt {
-                width: 31%;
-            }
-
-#populaires {
-    order:-1;
-    width: 100%;
-}        
-    #pop_cards {
-        flex-direction: row;
-        justify-content: space-between;
-        height: fit-content;
-        padding-bottom: 0;
-    }
-        .card_pop {
-            width: 31%;
-            margin-bottom: 0;
-        }
-
-        .card_act {
-            margin-bottom: clamp(10px, 1rem, 15px);
-        }
-}
-
-@media screen and (min-width:768px) and (max-width: 992px) and (orientation: landscape) {
-
-            .card_act {
-                margin-bottom: clamp(10px, 1rem, 15px);
-            }
 }
