@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     
     <link type="text/css" rel="stylesheet" href="normalize.css">
     <link type="text/css" rel="stylesheet" href="css.css">
@@ -21,10 +22,7 @@
   <!--HEADER-->
     <header>
 
-      <div id="logo"><img srcset="images/logo/Booki.png 191w,
-                                 images/logo/Booki@3x.png 285w"
-                          sizes="(max-width: 768px) 191px, 285px"
-                          src="images/logo/Booki@3x.png" alt="Booki"></div>
+      <div id="logo"><img src="images/logo/Booki@3x.png" alt="Booki"></div>
                                    
       <!--NAVIGATION-->
       <nav>
@@ -42,7 +40,7 @@
     </header>
 
     <!-- ZONE DE RECHERCHE -->
-    <div id="recherche">
+    <section id="recherche">
 
       <!-- RECHERCHE VILLE -->
       <div id="form">
@@ -61,42 +59,42 @@
         <div id="filtres_titre">
           Filtres
         </div>
-        <div class="filtres">
-          <div class="filtres_icon">
+        <div class="filtre">
+          <div class="filtre_icon">
             <i class="fas fa-money-bill-wave"></i>
           </div>
 
-          <div class="filtres_txt">
+          <div class="filtre_txt">
             &Eacute;conomique
           </div>
         </div>
 
-        <div class="filtres">
-          <div class="filtres_icon">
+        <div class="filtre">
+          <div class="filtre_icon">
             <i class="fas fa-child"></i> 
           </div>
 
-          <div class="filtres_txt">
+          <div class="filtre_txt">
             Familial
           </div>
         </div>
 
-        <div class="filtres">
-          <div class="filtres_icon">
+        <div class="filtre">
+          <div class="filtre_icon">
             <i class="fas fa-heart"></i>
           </div>
 
-          <div class="filtres_txt">
+          <div class="filtre_txt">
             Romantique
           </div>
         </div>
 
-        <div class="filtres">
-          <div class="filtres_icon">
+        <div class="filtre">
+          <div class="filtre_icon">
             <i class="fas fa-dog"></i>
           </div>
 
-          <div class="filtres_txt">
+          <div class="filtre_txt">
             Animaux autorisés
           </div>
         </div>
@@ -104,7 +102,7 @@
       </div>
 
       <div id="info">
-        <div id="info_icon" class="filtres_icon">
+        <div id="info_icon" class="filtre_icon">
           <i class="fas fa-info"></i>
         </div>
         
@@ -112,7 +110,7 @@
           Plus de 500 logements sont disponibles dans cette ville
         </div>
       </div>
-    </div>
+    </section>
 
 
 <!-- ZONE DE RESULTATS -->
@@ -124,15 +122,15 @@
             Hébergements à Marseille
           </h2>
 
-          <div id="hbgts_cards">
-            <a id="hbt_1" class="cards card_hbgt">
+          <div id="hbgts_cards"><!--conteneur des cards-->
+            <a id="hbt_1" class="cards card_hbgt"><!--les cards sont cliquables dans leur intégralité-->
               <div class="card_img">
                 <img  srcset="images/hebergements/hbgts/auberge-la-cannebiere_350.jpg 350w,
                               images/hebergements/hbgts/auberge-la-cannebiere_600.jpg 600w"
                       sizes="(max-width: 992px) 350px, 600px"
                       src="images/hebergements/hbgts/auberge-la-cannebiere_600.jpg" alt="Auberge La Cannebière">
               </div>
-              <DIV class="card_desc">
+              <div class="card_desc">
                 <h4>
                   Auberge La Cannebière
                 </h4>
@@ -146,7 +144,7 @@
                   <i class="fas fa-star positif"></i>
                   <i class="fas fa-star none"></i>
                 </div>
-              </DIV>
+              </div>
             </a>
 
 
@@ -157,7 +155,7 @@
                       sizes="(max-width: 992px) 350px, 600px"
                       src="images/hebergements/hbgts/hotel-du-port_600.jpg" alt="Hôtel du Port">
               </div>
-              <DIV class="card_desc">
+              <div class="card_desc">
                 <h4>
                   Hôtel du port
                 </h4>
@@ -171,7 +169,7 @@
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="positif"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
 
             <a id="hbt_3" class="cards card_hbgt">
@@ -181,7 +179,7 @@
                       sizes="(max-width: 992px) 350px, 600px"
                       src="images/hebergements/hbgts/hotel-les-mouettes_600.jpg" alt="Hôtel Les mouettes">
               </div>
-              <DIV class="card_desc">
+              <div class="card_desc">
                 <h4>
                   Hôtel Les mouettes
                 </h4>
@@ -195,7 +193,7 @@
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="none"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
 
             <a id="hbt_4" class="cards card_hbgt">
@@ -205,7 +203,7 @@
                       sizes="(max-width: 992px) 350px, 600px"
                       src="images/hebergements/hbgts/hotel-de-la-mer_600.jpg" alt="Hôtel de la mer">
               </div>
-              <DIV class="card_desc">
+              <div class="card_desc">
                 <h4>
                   Hôtel de la mer
                 </h4>
@@ -219,7 +217,7 @@
                   <span class="none"><i class="fas fa-star"></i></span>
                   <span class="none"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
 
             <a id="hbt_5" class="cards card_hbgt">
@@ -229,7 +227,7 @@
                       sizes="(max-width: 992px) 350px, 600px"
                       src="images/hebergements/hbgts/auberge-le-panier_600.jpg" alt="Auberge Le Panier">
               </div>
-              <DIV class="card_desc">
+              <div class="card_desc">
                 <h4>
                   Auberge Le Panier
                 </h4>
@@ -243,7 +241,7 @@
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="none"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
 
             <a id="hbt_6" class="cards card_hbgt">
@@ -253,13 +251,14 @@
                       sizes="(max-width: 992px) 350px, 600px"
                       src="images/hebergements/hbgts/hotel-chez-amina_600.jpg" alt="Hôtel chez Amina">
               </div>
-              <DIV class="card_desc">
+              <div class="card_desc">
                 <h4>
                   Hôtel chez Amina
                 </h4>
                 <div class="nuits">
                   Nuit à partir de 96<span class="eur">€</span>
                 </div>
+
                 <div class="rating">
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="positif"><i class="fas fa-star"></i></span>
@@ -267,7 +266,7 @@
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="positif"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
           </div>
 
@@ -278,22 +277,21 @@
         <!-- POPULAIRES -->
 
         <section id="populaires" class="rslts">
-          <h2 class="h2_caps">
+          <h2 class="h2_caps"> <!-- ajout d'un parent à h2 pour y adjoindre l'icône -->
             Les plus populaires
             <i class="fas fa-chart-line"></i>
           </h2>
-
 
           <div id="pop_cards">                
             <a id="pop_1" class="cards card_pop">
               <div class="card_pop_img">
                 <img  srcset="images/hebergements/populaires/hotel-le-soleil-du-matin_130.jpg 130w,
                               images/hebergements/populaires/hotel-le-soleil-du-matin_350.jpg 350w"
-                      sizes="(max-width: 992px) 130px, 350px"
+                      sizes="(max-width: 992px) 8.3vw, (max-width: 768px) 26.3vw, 9vw"
                       src="images/hebergements/populaires/hotel-le-soleil-du-matin_350.jpg" alt="Hôtel Le soleil du matin">
               </div>
-              <DIV class="card_desc card_pop_desc">
-                <div class="card_desc_info">
+              <div class="card_desc">
+                <div class="card_desc_info"> <!-- regroupement des textes de la card pour les séparer du rating avec le space-between du conteneur "pop_cards"-->
                   <h4>
                     Hôtel Le soleil du matin
                   </h4>
@@ -309,17 +307,17 @@
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="positif"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
 
             <a id="pop_2" class="cards card_pop">
               <div class="card_pop_img">
                 <img  srcset="images/hebergements/populaires/au-coeur-de-leau_130.jpg 130w,
                               images/hebergements/populaires/au-coeur-de-leau_350.jpg 350w"
-                      sizes="(max-width: 992px) 130px, 350px"
+                      sizes="(max-width: 992px) 8.3vw, (max-width: 768px) 26.3vw, 9vw"
                       src="images/hebergements/populaires/au-coeur-de-leau_350.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
               </div>
-              <DIV class="card_desc card_pop_desc">
+              <div class="card_desc">
                 <div class="card_desc_info">
                   <h4>
                     Au coeur de l'eau Chambres d'hôtes
@@ -336,17 +334,17 @@
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="none"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
 
             <a id="pop_3" class="cards card_pop">
               <div class="card_pop_img">
                 <img  srcset="images/hebergements/populaires/hotel-tout-bleu-et-blanc_130.jpg 130w,
                               images/hebergements/populaires/hotel-tout-bleu-et-blanc_350.jpg 350w"
-                      sizes="(max-width: 992px) 130px, 350px"
+                      sizes="(max-width: 992px) 8.3vw, (max-width: 768px) 26.3vw, 9vw"
                       src="images/hebergements/populaires/hotel-tout-bleu-et-blanc_350.jpg" alt="Hôtel Tout bleu et blanc">
               </div>
-              <DIV class="card_desc card_pop_desc">
+              <div class="card_desc">
                 <div class="card_desc_info">
                   <h4>
                     Hôtel Tout bleu et blanc
@@ -363,7 +361,7 @@
                   <span class="positif"><i class="fas fa-star"></i></span>
                   <span class="none"><i class="fas fa-star"></i></span>
                 </div>
-              </DIV>
+              </div>
             </a>
           </div>
 
@@ -375,94 +373,105 @@
             Activités à Marseille
           </h2>
 
-          <div id="act_rslts">
+          <div id="act_cards">
               <a id="act_1" class="cards card_act">
-                <DIV class="card_desc">
+                <div class="card_desc"> <!-- l'image et la description sont inversées pour gérer la hauteur de l'image (100% de l'espace restant) -->
                   <h4>
                     Vieux Port
                   </h4>
-                </DIV>
-
-                <div class="card_act_img">
-                  <img  srcset="images/activites/vieux-port_350.jpg 350w,
-                                images/activites/vieux-port_650.jpg 650w"
-                        sizes="(max-width: 992px) 350px, 650px"
-                        src="images/activites/vieux-port_650.jpg" alt="Vieux Port">
                 </div>
+
+                <picture class="card_act_img"><!-- choix artistiques : - les images de la section activités sont cadrées différemment en version mobile
+                                                  - on arbitre également entre 2 tailles d'images selon la taille de l'écran-->
+                  <source media="(max-width: 768px)" srcset="images/activites/vieux-port_650_mob.jpg">
+                  <source media="(min-width: 769px) and (max-width: 1600px)" srcset="images/activites/vieux-port_350.jpg">
+                  <source media="(min-width: 1601px)" srcset="images/activites/vieux-port_850.jpg">
+                  <img src="images/activites/vieux-port_850.jpg" alt="Vieux Port">
+                </picture>
               </a>
 
               <a id="act_2" class="cards card_act">
-                <DIV class="card_desc">
+                <div class="card_desc">
                   <h4>
                     Fort de Pom&egrave;gues
                   </h4>
-                </DIV>
+                </div>
 
                 <div class="card_act_img">
-                  <img  srcset="images/activites/fort-de-pomegues_350.jpg 350w,
-                                images/activites/fort-de-pomegues_650.jpg 650w"
-                        sizes="(max-width: 992px) 350px, 650px"
-                        src="images/activites/fort-de-pomegues.jpg" alt="Fort de Pom&egrave;gues">
+                  <picture class="card_act_img">
+                    <source media="(max-width: 768px)" srcset="images/activites/fort-de-pomegues_650_mob.jpg">
+                    <source media="(min-width: 769px) and (max-width: 1600px)" srcset="images/activites/fort-de-pomegues_350.jpg">
+                    <source media="(min-width: 1601px)" srcset="images/activites/fort-de-pomegues_850.jpg">  
+                    <img src="images/activites/fort-de-pomegues_850.jpg" alt="Fort de Pom&egrave;gues">
+                  </picture>
                 </div>
               </a>
 
               <a id="act_3" class="cards card_act">
-                <DIV class="card_desc">
+                <div class="card_desc">
                   <h4>
                     &Icirc;les du Frioul
                   </h4>
-                </DIV>
+                </div>
 
                 <div class="card_act_img">
-                  <img  srcset="images/activites/iles-du-frioul_350.jpg 350w,
-                                images/activites/iles-du-frioul_650.jpg 650w"
-                        sizes="(max-width: 992px) 650px, 350px"
-                        src="images/activites/iles-du-frioul.jpg" alt="&Icirc;les du Frioul">
+                  <picture class="card_act_img">
+                    <source media="(max-width: 768px)" srcset="images/activites/iles-du-frioul_650_mob.jpg">
+                    <source media="(min-width: 769px) and (max-width: 1600px)" srcset="images/activites/iles-du-frioul_350.jpg">
+                    <source media="(min-width: 1601px)" srcset="images/activites/iles-du-frioul_850.jpg">  
+                    <img src="images/activites/iles-du-frioul_850.jpg" alt="Iles du Frioul">
+                  </picture>
                 </div>
               </a>
 
               <a id="act_4" class="cards card_act">
-                <DIV class="card_desc">
+                <div class="card_desc">
                   <h4>
                     Parc national des Calanques
                   </h4>
-                </DIV>
+                </div>
 
                 <div class="card_act_img">
-                  <img  srcset="images/activites/parc-national-des-calanques_350.jpg 350w,
-                                images/activites/parc-national-des-calanques_650.jpg 650w"
-                        sizes="(max-width: 992px) 350px, 650px"
-                        src="images/activites/parc-national-des-calanques_650.jpg" alt="Parc national des Calanques">
+                  <picture class="card_act_img">
+                    <source media="(max-width: 768px)" srcset="images/activites/parc-national-des-calanques_650_mob.jpg">
+                    <source media="(min-width: 769px) and (max-width: 1600px)" srcset="images/activites/parc-national-des-calanques_350.jpg">
+                    <source media="(min-width: 1601px)" srcset="images/activites/parc-national-des-calanques_850.jpg">  
+                    <img src="images/activites/parc-national-des-calanques_850.jpg" alt="Parc national des Calanques">
+                  </picture>
                 </div>
               </a>
 
               <a id="act_5" class="cards card_act">
-                <DIV class="card_desc">
+                <div class="card_desc">
                   <h4>
                     Notre-Dame-de-la-Garde
                   </h4>
-                </DIV>
+                </div>
 
                 <div class="card_act_img">
-                  <img  srcset="images/activites/notre-dame-de-la-garde_350.jpg 350w,
-                                images/activites/notre-dame-de-la-garde_650.jpg 650w"
-                        sizes="(max-width: 992px) 350px, 650px"
-                        src="images/activites/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde">
+                  <picture class="card_act_img">
+                    <source media="(max-width: 768px)" srcset="images/activites/notre-dame-de-la-garde_650_mob.jpg">
+                    <source media="(min-width: 769px) and (max-width: 1600px)" srcset="images/activites/notre-dame-de-la-garde_350.jpg">
+                    <source media="(min-width: 1601px)" srcset="images/activites/notre-dame-de-la-garde_850.jpg">  
+                    <img src="images/activites/notre-dame-de-la-garde_850.jpg" alt="Notre-Dame-de-la-Garde">
+                  </picture>
                 </div>
-              </a>
+               </a>
               
               <a id="act_6" class="cards card_act">
-                <DIV class="card_desc">
+                <div class="card_desc">
                   <h4>
                     Parc Longchamp
                   </h4>
-                </DIV>
+                </div>
 
                 <div class="card_act_img">
-                  <img  srcset="images/activites/parc-longchamp_350.jpg 350w,
-                                images/activites/parc-longchamp_650.jpg 650w"
-                        sizes="(max-width: 992px) 350px, 650px"
-                        src="images/activites/parc-longchamp.jpg" alt="Parc Longchamp">
+                  <picture class="card_act_img">
+                    <source media="(max-width: 768px)" srcset="images/activites/parc-longchamp_650_mob.jpg">
+                    <source media="(min-width: 769px) and (max-width: 1600px)" srcset="images/activites/parc-longchamp_350.jpg">
+                    <source media="(min-width: 1601px)" srcset="images/activites/parc-longchamp_850.jpg">  
+                    <img src="images/activites/parc-longchamp_850.jpg" alt="Parc Longchamp">
+                  </picture>
                 </div>
               </a>
           </div>
@@ -472,7 +481,7 @@
 
     <!--FOOTER -->
     <FOOTER>
-        <DIV id="about" class="footerblock">
+        <div id="about" class="footerblock">
           <h3>
             A propos
           </h3>
@@ -487,9 +496,9 @@
               <a>Données et confidentialité</a>
             </li>
           </ul>
-        </DIV>
+        </div>
 
-        <DIV id="hotels" class="footerblock">
+        <div id="hotels" class="footerblock">
           <h3>
             Nos hébergements
           </h3>
@@ -501,9 +510,9 @@
               <a>Soumettre votre hôtel</a>
             </li>
           </ul>
-        </DIV>
+        </div>
 
-        <DIV id="help" class="footerblock">
+        <div id="help" class="footerblock">
           <h3>
             Assistance
           </h3>
@@ -515,7 +524,7 @@
               <a>Nous contacter</a>
             </li>
           </ul>
-        </DIV>
+        </div>
     </FOOTER>
    
   </body>
