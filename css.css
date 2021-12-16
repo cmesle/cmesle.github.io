@@ -411,8 +411,7 @@ h2 {
                 }
 
             #act_1,
-            #act_4
-            {
+            #act_4 {
                 height: 100%; /** la 1ère et la 4ème cards occupent toute la hauteur de leur conteneur **/
             }
 
@@ -483,9 +482,9 @@ footer {
 /**--------------------------------------------------------------------
                 CSS DESKTOP :HOVER VIEWPORT > 993px
 --------------------------------------------------------------------**/
-@media screen and (min-width: 993px) { /** les :hover des éléments suivants ne sont actifs que sur les écrans desktop **/
-
-    .filtre:hover {
+/* @media screen and (min-width: 993px) { /** les :hover des éléments suivants ne sont actifs que sur les écrans desktop **/
+ */
+    .filtre:hover, .filtre:active {
         margin-top: -1px;
         background-color: var(--bleu-light);
         border-radius: 2rem;
@@ -493,19 +492,19 @@ footer {
         color: var(--bleu);
         cursor: pointer;
     }
-    .filtre_txt:hover {
+    .filtre_txt:hover, .filtre_txt:active {
         border-color: var(--bleu-light);
     }
-    .cards:hover {
+    .cards:hover, .cards:active {
         margin-top: -1px;
         box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
     }
 
-    .footerlinks a:hover {
+    .footerlinks a:hover, .footerlinks :active {
         padding-left: 1rem;
         border-left: 2px solid black;
     }
-}    
+/* } */    
 
 /**--------------------------------------------------------------------
                 CSS TABLETTE VIEWPORT 768px <> 992px
