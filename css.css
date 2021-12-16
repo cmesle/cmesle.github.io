@@ -172,6 +172,14 @@ font-size: 120%;
             display: flex;
             margin-right: 2.5%;
         }
+        .filtre:hover, .filtre:active {
+            margin-top: -1px;
+            background-color: var(--bleu-light);
+            border-radius: 2rem;
+            box-shadow: -1px 3px 5px rgba(0,0,0,0.5);
+            color: var(--bleu);
+            cursor: pointer;
+        }
 
                 .filtre_icon i {
                     position: relative; /** pour utiliser le z-index **/
@@ -198,7 +206,9 @@ font-size: 120%;
                 border-radius: 2rem;
                 transition: background-color 0.5s ease, box-shadow 0.5s ease;
             }
-
+            .filtre_txt:hover, .filtre_txt:active {
+                border-color: var(--bleu-light);
+            }
 
 
     #info {
@@ -253,6 +263,10 @@ h2 {
         border-radius: 1rem;
         background-color: white;
         box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+    .cards:hover, .cards:active {
+        margin-top: -1px;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
     }
 
         .rating {
@@ -476,35 +490,11 @@ footer {
             color:black;
             transition: padding-left 1s ease;
         }
+        .footerlinks a:hover, .footerlinks :active {
+            padding-left: 1rem;
+            border-left: 2px solid black;
+        }
 
-
-
-/**--------------------------------------------------------------------
-                CSS DESKTOP :HOVER VIEWPORT > 993px
---------------------------------------------------------------------**/
-/** @media screen and (min-width: 993px) { /** les :hover des éléments suivants ne sont actifs que sur les écrans desktop **/
- 
-    .filtre:hover, .filtre:active {
-        margin-top: -1px;
-        background-color: var(--bleu-light);
-        border-radius: 2rem;
-        box-shadow: -1px 3px 5px rgba(0,0,0,0.5);
-        color: var(--bleu);
-        cursor: pointer;
-    }
-    .filtre_txt:hover, .filtre_txt:active {
-        border-color: var(--bleu-light);
-    }
-    .cards:hover, .cards:active {
-        margin-top: -1px;
-        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
-    }
-
-    .footerlinks a:hover, .footerlinks :active {
-        padding-left: 1rem;
-        border-left: 2px solid black;
-    }
-/** } **/    
 
 /**--------------------------------------------------------------------
                 CSS TABLETTE VIEWPORT 768px <> 992px
@@ -565,9 +555,6 @@ footer {
                 padding-top: 20px;
             }
 
-/*                 #logo img {
-                    width: 25vw;
-                } */
  
             /**---- NAVIGATION ----**/
             nav {
@@ -576,22 +563,22 @@ footer {
                 font-weight: 400;
             }
 
-                    nav ul li {
-                        width: 50%; /** chaque élément du menu occupe la moitié de la largeur de l'écran **/
-                        text-align: center;
+                nav ul li {
+                    width: 50%; /** chaque élément du menu occupe la moitié de la largeur de l'écran **/
+                    text-align: center;
+                }
+            
+                    nav a {
+                    padding: 7%;
+                    border-top: unset; /** annulation de la border-top blanche destinée à empêcher le décalage au :hover **/
+                    border-bottom: 3px solid var(--gris);
                     }
-                
-                        nav a {
-                        padding: 7%;
-                        border-top: unset; /** annulation de la border-top blanche destinée à empêcher le décalage au :hover **/
-                        border-bottom: 3px solid var(--gris);
-                        }
 
-                        nav a:hover, nav a:active {
-                            border-top: unset; /** annulation de la border-top bleue au :hover **/
-                            border-bottom: 3px solid var(--bleu);
-                            color: var(--bleu);
-                        }
+                    nav a:hover, nav a:active {
+                        border-top: unset; /** annulation de la border-top bleue au :hover **/
+                        border-bottom: 3px solid var(--bleu);
+                        color: var(--bleu);
+                    }
 
             /**---- BASELINE ----**/
             #baseline {
@@ -604,7 +591,7 @@ footer {
                 }
 
 
-        /**--- SECTION RECHERCHE ---**/
+        /**--- ZONE DE RECHERCHE ---**/
 
         #recherche {
             padding: 0 4.5%;
@@ -621,7 +608,7 @@ footer {
                 width: 75%;
             }
         
-                #ville-submit_dsk {
+                #ville-submit_dsk { /** invisibilisation du bouton "rechercher" de la version desktop **/
                     display: none;
                 }
 
@@ -640,7 +627,7 @@ footer {
                     color: var(--gris);
                 }
                     #ville-submit_mob_button {
-                        border: none;
+                        border: none; /** contre un style par défaut des navigateurs **/
                         border-radius: 30%;
                         background-color: var(--bleu);
                     }
@@ -716,7 +703,7 @@ footer {
             }
 
             .card_img {
-                max-width: unset;
+                max-width: unset; /** les cards occupent désormais toute la largeur disponible **/
                 height: 8.1rem;
                 border-radius: 1rem 1rem 0 0;
             }
@@ -794,7 +781,7 @@ footer {
                         height: 9.5rem;
                         max-width: unset;
                     }
-
+                /** décalage des images dans leur conteneur pour correspondre exactement au visuel maquette **/
                 #act_1 .card_act_img img {
                     transform: translate(0, -7%);
                 }           
@@ -830,11 +817,6 @@ footer {
             }
 
             h3 {
-/*                     font-size: 5rem; */
                 font-weight: 600;
             }
-
-                .footerlinks a {
-/*                         font-size: 4.5rem; */
-                }
 }
