@@ -437,10 +437,6 @@ h2 {
                 height: 54%;
             }
 
-                    #act_2 .card_act_img img {
-                        transform: translate(0, -16%);
-                    }
-
             #act_3 {
                 height: 37%;
             }
@@ -530,6 +526,10 @@ footer {
                 #act_cards {
                     height: 25rem; /** ajustement de la hauteur du conteneur suite à l'augmentation de la taille de police racine, pour garder les proportions **/
                 }
+    
+                #act_2 .card_act_img img {
+                transform: translate(0, -16%);
+            }
 }
 
 
