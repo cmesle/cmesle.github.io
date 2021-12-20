@@ -662,7 +662,7 @@ footer {
                 }
 
                     #info_icon {
-                        margin-right: 1rem;
+                        margin-right: 0.8rem;
                     }
 
                         #info_icon i {
@@ -672,7 +672,7 @@ footer {
                         }
 
                     #info_txt {
-                        margin-top: 5px;
+                        margin-top: 0.3rem;
                         font-weight: 300;
                     }
 
