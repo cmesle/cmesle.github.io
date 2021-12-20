@@ -428,8 +428,7 @@ h2 {
                 height: 100%; /** la 1ère et la 4ème cards occupent toute la hauteur de leur conteneur **/
             }
 
-            .card_act:nth-child(5),
-            .card_act:nth-child(6) {
+            .card_act:nth-last-child(-n+2) {
                 margin-right: 0; /** les 2 dernières cards sont alignées sur le bord droit du conteneur **/
             }
 
