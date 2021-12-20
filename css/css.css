@@ -494,7 +494,7 @@ footer {
 /**--------------------------------------------------------------------
                 CSS TABLETTE VIEWPORT 768px <> 992px
 --------------------------------------------------------------------**/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
     :root {
         font-size: 1.2vw; /** augmentation de la taille de police racine pour garantir la lisibilité des textes sur des écrans plus petits **/
     }
